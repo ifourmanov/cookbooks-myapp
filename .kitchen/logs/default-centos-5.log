@@ -1,0 +1,618 @@
+I, [2015-04-16T08:23:34.430633 #2066]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T08:23:34.447085 #2066]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T08:23:34.448031 #2066]  INFO -- default-centos-5: time="2015-04-16T08:23:34Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?" 
+E, [2015-04-16T08:23:34.460006 #2066] ERROR -- default-centos-5: Create failed on instance <default-centos-5>.
+E, [2015-04-16T08:23:34.461050 #2066] ERROR -- default-centos-5: ------Exception-------
+E, [2015-04-16T08:23:34.461258 #2066] ERROR -- default-centos-5: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-04-16T08:23:34.461441 #2066] ERROR -- default-centos-5: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+STDOUT: Sending build context to Docker daemon
+STDERR: time="2015-04-16T08:23:34Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build - returned 1
+E, [2015-04-16T08:23:34.461668 #2066] ERROR -- default-centos-5: ---Nested Exception---
+E, [2015-04-16T08:23:34.461846 #2066] ERROR -- default-centos-5: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-04-16T08:23:34.462018 #2066] ERROR -- default-centos-5: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+STDOUT: Sending build context to Docker daemon
+STDERR: time="2015-04-16T08:23:34Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build - returned 1
+E, [2015-04-16T08:23:34.462191 #2066] ERROR -- default-centos-5: ------Backtrace-------
+E, [2015-04-16T08:23:34.462361 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-04-16T08:23:34.462532 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-04-16T08:23:34.462704 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-04-16T08:23:34.462859 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:117:in `docker_command'
+E, [2015-04-16T08:23:34.463035 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:206:in `build_image'
+E, [2015-04-16T08:23:34.463206 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:85:in `create'
+E, [2015-04-16T08:23:34.463421 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-16T08:23:34.463595 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-16T08:23:34.463767 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-16T08:23:34.463874 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-16T08:23:34.464047 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-16T08:23:34.464229 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-04-16T08:23:34.464396 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-16T08:23:34.464558 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-16T08:23:34.464733 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-04-16T08:23:34.464891 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-16T08:23:34.465062 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-16T08:23:34.465224 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-16T08:23:34.465385 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-16T08:23:34.465546 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-16T08:23:34.465706 #2066] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-16T08:23:34.465883 #2066] ERROR -- default-centos-5: ----------------------
+I, [2015-04-16T08:25:49.904423 #2239]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T08:25:49.922205 #2239]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T08:25:49.923586 #2239]  INFO -- default-centos-5: time="2015-04-16T08:25:49Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?" 
+E, [2015-04-16T08:25:49.935686 #2239] ERROR -- default-centos-5: Create failed on instance <default-centos-5>.
+E, [2015-04-16T08:25:49.936058 #2239] ERROR -- default-centos-5: ------Exception-------
+E, [2015-04-16T08:25:49.936260 #2239] ERROR -- default-centos-5: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-04-16T08:25:49.936457 #2239] ERROR -- default-centos-5: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+STDOUT: Sending build context to Docker daemon
+STDERR: time="2015-04-16T08:25:49Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build - returned 1
+E, [2015-04-16T08:25:49.936650 #2239] ERROR -- default-centos-5: ---Nested Exception---
+E, [2015-04-16T08:25:49.936869 #2239] ERROR -- default-centos-5: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-04-16T08:25:49.937055 #2239] ERROR -- default-centos-5: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+STDOUT: Sending build context to Docker daemon
+STDERR: time="2015-04-16T08:25:49Z" level="fatal" msg="Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build - ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build - returned 1
+E, [2015-04-16T08:25:49.937253 #2239] ERROR -- default-centos-5: ------Backtrace-------
+E, [2015-04-16T08:25:49.937517 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-04-16T08:25:49.937725 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-04-16T08:25:49.937860 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-04-16T08:25:49.938051 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:117:in `docker_command'
+E, [2015-04-16T08:25:49.938235 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:206:in `build_image'
+E, [2015-04-16T08:25:49.938462 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kitchen-docker-2.0.0/lib/kitchen/driver/docker.rb:85:in `create'
+E, [2015-04-16T08:25:49.938622 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-16T08:25:49.938821 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-16T08:25:49.938978 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-16T08:25:49.939132 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-16T08:25:49.939288 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-16T08:25:49.939466 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-04-16T08:25:49.939827 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-16T08:25:49.940017 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-16T08:25:49.940191 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-04-16T08:25:49.940452 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-16T08:25:49.940618 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-16T08:25:49.940763 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-16T08:25:49.940853 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-16T08:25:49.940968 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-16T08:25:49.941079 #2239] ERROR -- default-centos-5: /home/vagrant/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-16T08:25:49.941189 #2239] ERROR -- default-centos-5: ----------------------
+I, [2015-04-16T08:30:48.935536 #2708]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T08:30:48.961352 #2708]  INFO -- default-centos-5: Sending build context to Docker daemon  2.56 kB
+I, [2015-04-16T08:30:48.961787 #2708]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T08:30:48.998184 #2708]  INFO -- default-centos-5: Step 0 : FROM centos:centos5
+I, [2015-04-16T08:30:50.515996 #2708]  INFO -- default-centos-5: centos:centos5: The image you are pulling has been verified
+I, [2015-04-16T08:30:50.516498 #2708]  INFO -- default-centos-5: 511136ea3c5a: Pulling fs layer
+I, [2015-04-16T08:30:50.518048 #2708]  INFO -- default-centos-5: 5b12ef8fd570: Pulling fs layer
+I, [2015-04-16T08:30:50.520303 #2708]  INFO -- default-centos-5: 861c710fef70: Pulling fs layer
+I, [2015-04-16T08:30:52.072913 #2708]  INFO -- default-centos-5: 5b12ef8fd570: Download complete
+I, [2015-04-16T08:30:52.075514 #2708]  INFO -- default-centos-5: 511136ea3c5a: Download complete
+I, [2015-04-16T08:30:52.193982 #2708]  INFO -- default-centos-5: 511136ea3c5a: Pull complete
+I, [2015-04-16T08:30:52.266525 #2708]  INFO -- default-centos-5: 5b12ef8fd570: Pull complete
+I, [2015-04-16T08:41:04.150896 #2708]  INFO -- default-centos-5: 861c710fef70: Download complete
+I, [2015-04-16T08:41:14.030929 #2708]  INFO -- default-centos-5: 861c710fef70: Pull complete
+I, [2015-04-16T08:41:14.075986 #2708]  INFO -- default-centos-5: Status: Downloaded newer image for centos:centos5
+I, [2015-04-16T08:41:14.080978 #2708]  INFO -- default-centos-5:  ---> 861c710fef70
+I, [2015-04-16T08:41:14.081346 #2708]  INFO -- default-centos-5: Step 1 : RUN yum clean all
+I, [2015-04-16T08:41:14.190624 #2708]  INFO -- default-centos-5:  ---> Running in 00721f526b6c
+I, [2015-04-16T08:41:14.729590 #2708]  INFO -- default-centos-5: Loaded plugins: fastestmirror
+I, [2015-04-16T08:41:14.784712 #2708]  INFO -- default-centos-5: Cleaning up Everything
+I, [2015-04-16T08:41:18.722719 #2708]  INFO -- default-centos-5:  ---> 7168368bd282
+I, [2015-04-16T08:41:19.635076 #2708]  INFO -- default-centos-5: Removing intermediate container 00721f526b6c
+I, [2015-04-16T08:41:19.635924 #2708]  INFO -- default-centos-5: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-04-16T08:41:19.721778 #2708]  INFO -- default-centos-5:  ---> Running in 96a04fc14ab5
+I, [2015-04-16T08:41:19.995829 #2708]  INFO -- default-centos-5: Loaded plugins: fastestmirror
+I, [2015-04-16T08:41:20.047050 #2708]  INFO -- default-centos-5: Determining fastest mirrors
+I, [2015-04-16T08:41:22.633879 #2708]  INFO -- default-centos-5:  * base: mirror.isoc.org.il
+I, [2015-04-16T08:41:22.642409 #2708]  INFO -- default-centos-5:  * extras: mirror.isoc.org.il
+I, [2015-04-16T08:41:22.642691 #2708]  INFO -- default-centos-5:  * libselinux: mirror.isoc.org.il
+I, [2015-04-16T08:41:22.643074 #2708]  INFO -- default-centos-5:  * updates: mirror.isoc.org.il
+I, [2015-04-16T08:41:30.068593 #2708]  INFO -- default-centos-5: Reducing CentOS-5 - libselinux to included packages only
+I, [2015-04-16T08:41:30.070746 #2708]  INFO -- default-centos-5: Finished
+I, [2015-04-16T08:41:30.073044 #2708]  INFO -- default-centos-5: Setting up Install Process
+I, [2015-04-16T08:41:30.822998 #2708]  INFO -- default-centos-5: Resolving Dependencies
+I, [2015-04-16T08:41:30.825112 #2708]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T08:41:30.826305 #2708]  INFO -- default-centos-5: ---> Package curl.i386 0:7.15.5-17.el5_9 set to be updated
+I, [2015-04-16T08:41:30.860370 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.4) for package: curl
+I, [2015-04-16T08:41:30.881101 #2708]  INFO -- default-centos-5: --> Processing Dependency: libgssapi_krb5.so.2 for package: curl
+I, [2015-04-16T08:41:30.887334 #2708]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2(GLIBC_2.1) for package: curl
+I, [2015-04-16T08:41:30.893160 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.1.3) for package: curl
+I, [2015-04-16T08:41:30.895155 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.2) for package: curl
+I, [2015-04-16T08:41:30.897206 #2708]  INFO -- default-centos-5: --> Processing Dependency: libidn.so.11 for package: curl
+I, [2015-04-16T08:41:30.904380 #2708]  INFO -- default-centos-5: --> Processing Dependency: libz.so.1 for package: curl
+I, [2015-04-16T08:41:30.910254 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6 for package: curl
+I, [2015-04-16T08:41:30.918472 #2708]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2 for package: curl
+I, [2015-04-16T08:41:30.919909 #2708]  INFO -- default-centos-5: --> Processing Dependency: libgssapi_krb5.so.2(gssapi_krb5_2_MIT) for package: curl
+I, [2015-04-16T08:41:30.925071 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.3) for package: curl
+I, [2015-04-16T08:41:30.933584 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.3.4) for package: curl
+I, [2015-04-16T08:41:30.935361 #2708]  INFO -- default-centos-5: --> Processing Dependency: libk5crypto.so.3 for package: curl
+I, [2015-04-16T08:41:30.942081 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.1) for package: curl
+I, [2015-04-16T08:41:30.951936 #2708]  INFO -- default-centos-5: --> Processing Dependency: libssl.so.6 for package: curl
+I, [2015-04-16T08:41:30.969045 #2708]  INFO -- default-centos-5: --> Processing Dependency: libcom_err.so.2 for package: curl
+I, [2015-04-16T08:41:30.974962 #2708]  INFO -- default-centos-5: --> Processing Dependency: libcrypto.so.6 for package: curl
+I, [2015-04-16T08:41:30.985092 #2708]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.0) for package: curl
+I, [2015-04-16T08:41:30.995823 #2708]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2(GLIBC_2.0) for package: curl
+I, [2015-04-16T08:41:30.996913 #2708]  INFO -- default-centos-5: --> Processing Dependency: libkrb5.so.3 for package: curl
+I, [2015-04-16T08:41:31.003138 #2708]  INFO -- default-centos-5: ---> Package curl.x86_64 0:7.15.5-17.el5_9 set to be updated
+I, [2015-04-16T08:41:31.031900 #2708]  INFO -- default-centos-5: --> Processing Dependency: libidn.so.11()(64bit) for package: curl
+I, [2015-04-16T08:41:31.038810 #2708]  INFO -- default-centos-5: ---> Package openssh-clients.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T08:41:31.064403 #2708]  INFO -- default-centos-5: --> Processing Dependency: openssh = 4.3p2-82.el5 for package: openssh-clients
+I, [2015-04-16T08:41:31.070909 #2708]  INFO -- default-centos-5: --> Processing Dependency: libfipscheck.so.1()(64bit) for package: openssh-clients
+I, [2015-04-16T08:41:31.078408 #2708]  INFO -- default-centos-5: ---> Package openssh-server.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T08:41:46.996814 #2708]  INFO -- default-centos-5: --> Processing Dependency: libwrap.so.0()(64bit) for package: openssh-server
+I, [2015-04-16T08:41:47.002390 #2708]  INFO -- default-centos-5: ---> Package sudo.x86_64 0:1.7.2p1-29.el5_10 set to be updated
+I, [2015-04-16T08:41:47.010594 #2708]  INFO -- default-centos-5: --> Processing Dependency: policycoreutils for package: sudo
+I, [2015-04-16T08:41:47.014401 #2708]  INFO -- default-centos-5: ---> Package which.x86_64 0:2.16-7 set to be updated
+I, [2015-04-16T08:41:47.021893 #2708]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T08:41:47.022892 #2708]  INFO -- default-centos-5: ---> Package e2fsprogs-libs.i386 0:1.39-37.el5 set to be updated
+I, [2015-04-16T08:41:47.032185 #2708]  INFO -- default-centos-5: --> Processing Dependency: libdevmapper.so.1.02 for package: e2fsprogs-libs
+I, [2015-04-16T08:41:47.036660 #2708]  INFO -- default-centos-5: ---> Package fipscheck-lib.x86_64 0:1.2.0-1.el5 set to be updated
+I, [2015-04-16T08:41:47.040170 #2708]  INFO -- default-centos-5: --> Processing Dependency: /usr/bin/fipscheck for package: fipscheck-lib
+I, [2015-04-16T08:41:47.044148 #2708]  INFO -- default-centos-5: ---> Package glibc.i686 0:2.5-123.el5_11.1 set to be updated
+I, [2015-04-16T08:41:47.054058 #2708]  INFO -- default-centos-5: ---> Package krb5-libs.i386 0:1.6.1-80.el5_11 set to be updated
+I, [2015-04-16T08:41:47.065020 #2708]  INFO -- default-centos-5: --> Processing Dependency: libkeyutils.so.1 for package: krb5-libs
+I, [2015-04-16T08:41:47.068844 #2708]  INFO -- default-centos-5: --> Processing Dependency: libselinux.so.1 for package: krb5-libs
+I, [2015-04-16T08:41:47.072120 #2708]  INFO -- default-centos-5: --> Processing Dependency: libkeyutils.so.1(KEYUTILS_0.3) for package: krb5-libs
+I, [2015-04-16T08:41:47.075015 #2708]  INFO -- default-centos-5: ---> Package libidn.i386 0:0.6.5-1.1 set to be updated
+I, [2015-04-16T08:41:47.077980 #2708]  INFO -- default-centos-5: ---> Package libidn.x86_64 0:0.6.5-1.1 set to be updated
+I, [2015-04-16T08:41:47.080841 #2708]  INFO -- default-centos-5: ---> Package openssh.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T08:41:47.100783 #2708]  INFO -- default-centos-5: ---> Package openssl.i686 0:0.9.8e-33.el5_11 set to be updated
+I, [2015-04-16T08:41:47.107054 #2708]  INFO -- default-centos-5: ---> Package openssl.x86_64 0:0.9.8e-33.el5_11 set to be updated
+I, [2015-04-16T08:41:47.109293 #2708]  INFO -- default-centos-5: ---> Package policycoreutils.x86_64 0:1.33.12-14.13.el5 set to be updated
+I, [2015-04-16T08:41:47.149865 #2708]  INFO -- default-centos-5: --> Processing Dependency: libsemanage >= 1.9.1-4.2 for package: policycoreutils
+I, [2015-04-16T08:41:47.152969 #2708]  INFO -- default-centos-5: --> Processing Dependency: audit-libs-python >= 1.1.4-3 for package: policycoreutils
+I, [2015-04-16T08:41:47.157760 #2708]  INFO -- default-centos-5: --> Processing Dependency: libselinux-python for package: policycoreutils
+I, [2015-04-16T08:41:47.163857 #2708]  INFO -- default-centos-5: --> Processing Dependency: libsemanage.so.1(LIBSEMANAGE_1.0)(64bit) for package: policycoreutils
+I, [2015-04-16T08:41:47.166833 #2708]  INFO -- default-centos-5: --> Processing Dependency: libsemanage.so.1()(64bit) for package: policycoreutils
+I, [2015-04-16T08:41:47.168546 #2708]  INFO -- default-centos-5: ---> Package tcp_wrappers.x86_64 0:7.6-40.7.el5 set to be updated
+I, [2015-04-16T08:41:47.173909 #2708]  INFO -- default-centos-5: ---> Package zlib.i386 0:1.2.3-7.el5 set to be updated
+I, [2015-04-16T08:41:47.176969 #2708]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T08:41:47.177207 #2708]  INFO -- default-centos-5: ---> Package audit-libs-python.x86_64 0:1.8-2.el5 set to be updated
+I, [2015-04-16T08:41:47.181767 #2708]  INFO -- default-centos-5: ---> Package device-mapper.i386 0:1.02.67-2.el5_11.1 set to be updated
+I, [2015-04-16T08:41:47.185120 #2708]  INFO -- default-centos-5: --> Processing Dependency: libsepol.so.1 for package: device-mapper
+I, [2015-04-16T08:41:47.188652 #2708]  INFO -- default-centos-5: ---> Package fipscheck.x86_64 0:1.2.0-1.el5 set to be updated
+I, [2015-04-16T08:41:47.190990 #2708]  INFO -- default-centos-5: ---> Package keyutils-libs.i386 0:1.2-1.el5 set to be updated
+I, [2015-04-16T08:41:47.193354 #2708]  INFO -- default-centos-5: ---> Package libselinux.i386 0:1.33.4-5.7.el5.centos set to be updated
+I, [2015-04-16T08:41:47.199644 #2708]  INFO -- default-centos-5: ---> Package libselinux-python.x86_64 0:1.33.4-5.7.el5.centos set to be updated
+I, [2015-04-16T08:41:47.202534 #2708]  INFO -- default-centos-5: ---> Package libsemanage.x86_64 0:1.9.1-4.4.el5 set to be updated
+I, [2015-04-16T08:41:47.207775 #2708]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T08:41:47.208992 #2708]  INFO -- default-centos-5: ---> Package libsepol.i386 0:1.15.2-3.el5 set to be updated
+I, [2015-04-16T08:41:47.297629 #2708]  INFO -- default-centos-5: --> Finished Dependency Resolution
+I, [2015-04-16T08:41:47.304465 #2708]  INFO -- default-centos-5: Dependencies Resolved
+I, [2015-04-16T08:41:47.333977 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:41:47.334036 #2708]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T08:41:47.334409 #2708]  INFO -- default-centos-5:  Package              Arch      Version                     Repository     Size
+I, [2015-04-16T08:41:47.335563 #2708]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T08:41:47.335853 #2708]  INFO -- default-centos-5: Installing:
+I, [2015-04-16T08:41:47.336425 #2708]  INFO -- default-centos-5:  curl                 i386      7.15.5-17.el5_9             base          235 k
+I, [2015-04-16T08:41:47.336494 #2708]  INFO -- default-centos-5:  curl                 x86_64    7.15.5-17.el5_9             base          232 k
+I, [2015-04-16T08:41:47.336751 #2708]  INFO -- default-centos-5:  openssh-clients      x86_64    4.3p2-82.el5                base          456 k
+I, [2015-04-16T08:41:47.336775 #2708]  INFO -- default-centos-5:  openssh-server       x86_64    4.3p2-82.el5                base          280 k
+I, [2015-04-16T08:41:47.336830 #2708]  INFO -- default-centos-5:  sudo                 x86_64    1.7.2p1-29.el5_10           base          364 k
+I, [2015-04-16T08:41:47.336921 #2708]  INFO -- default-centos-5:  which                x86_64    2.16-7                      base           24 k
+I, [2015-04-16T08:41:47.337008 #2708]  INFO -- default-centos-5: Installing for dependencies:
+I, [2015-04-16T08:41:47.337094 #2708]  INFO -- default-centos-5:  audit-libs-python    x86_64    1.8-2.el5                   base           82 k
+I, [2015-04-16T08:41:47.337179 #2708]  INFO -- default-centos-5:  device-mapper        i386      1.02.67-2.el5_11.1          updates       804 k
+I, [2015-04-16T08:41:47.337278 #2708]  INFO -- default-centos-5:  e2fsprogs-libs       i386      1.39-37.el5                 base          120 k
+I, [2015-04-16T08:41:47.337394 #2708]  INFO -- default-centos-5:  fipscheck            x86_64    1.2.0-1.el5                 base           13 k
+I, [2015-04-16T08:41:47.337481 #2708]  INFO -- default-centos-5:  fipscheck-lib        x86_64    1.2.0-1.el5                 base          6.7 k
+I, [2015-04-16T08:41:47.337565 #2708]  INFO -- default-centos-5:  glibc                i686      2.5-123.el5_11.1            updates       5.4 M
+I, [2015-04-16T08:41:47.337660 #2708]  INFO -- default-centos-5:  keyutils-libs        i386      1.2-1.el5                   base           18 k
+I, [2015-04-16T08:41:47.337723 #2708]  INFO -- default-centos-5:  krb5-libs            i386      1.6.1-80.el5_11             updates       670 k
+I, [2015-04-16T08:41:47.337816 #2708]  INFO -- default-centos-5:  libidn               i386      0.6.5-1.1                   base          194 k
+I, [2015-04-16T08:41:47.337900 #2708]  INFO -- default-centos-5:  libidn               x86_64    0.6.5-1.1                   base          195 k
+I, [2015-04-16T08:41:47.337984 #2708]  INFO -- default-centos-5:  libselinux           i386      1.33.4-5.7.el5.centos       libselinux     77 k
+I, [2015-04-16T08:41:47.338075 #2708]  INFO -- default-centos-5:  libselinux-python    x86_64    1.33.4-5.7.el5.centos       libselinux     74 k
+I, [2015-04-16T08:41:47.338158 #2708]  INFO -- default-centos-5:  libsemanage          x86_64    1.9.1-4.4.el5               base          141 k
+I, [2015-04-16T08:41:47.338242 #2708]  INFO -- default-centos-5:  libsepol             i386      1.15.2-3.el5                base          128 k
+I, [2015-04-16T08:41:47.338325 #2708]  INFO -- default-centos-5:  openssh              x86_64    4.3p2-82.el5                base          291 k
+I, [2015-04-16T08:41:47.338408 #2708]  INFO -- default-centos-5:  openssl              i686      0.9.8e-33.el5_11            updates       1.5 M
+I, [2015-04-16T08:41:47.338508 #2708]  INFO -- default-centos-5:  policycoreutils      x86_64    1.33.12-14.13.el5           base          630 k
+I, [2015-04-16T08:41:47.338613 #2708]  INFO -- default-centos-5:  tcp_wrappers         x86_64    7.6-40.7.el5                base          112 k
+I, [2015-04-16T08:41:47.338698 #2708]  INFO -- default-centos-5:  zlib                 i386      1.2.3-7.el5                 base           51 k
+I, [2015-04-16T08:41:47.339747 #2708]  INFO -- default-centos-5: Updating for dependencies:
+I, [2015-04-16T08:41:47.339820 #2708]  INFO -- default-centos-5:  openssl              x86_64    0.9.8e-33.el5_11            updates       1.5 M
+I, [2015-04-16T08:41:47.339923 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:41:47.340009 #2708]  INFO -- default-centos-5: Transaction Summary
+I, [2015-04-16T08:41:47.340094 #2708]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T08:41:47.340178 #2708]  INFO -- default-centos-5: Install      25 Package(s)
+I, [2015-04-16T08:41:47.340262 #2708]  INFO -- default-centos-5: Upgrade       1 Package(s)
+I, [2015-04-16T08:41:47.340821 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:41:47.341145 #2708]  INFO -- default-centos-5: Total download size: 13 M
+I, [2015-04-16T08:41:47.341818 #2708]  INFO -- default-centos-5: Downloading Packages:
+I, [2015-04-16T08:42:05.285458 #2708]  INFO -- default-centos-5: --------------------------------------------------------------------------------
+I, [2015-04-16T08:42:05.286164 #2708]  INFO -- default-centos-5: Total                                           764 kB/s |  13 MB     00:17     
+I, [2015-04-16T08:42:05.289652 #2708]  INFO -- default-centos-5: [91mwarning: rpmts_HdrFromFdno: Header V3 DSA signature: NOKEY, key ID e8562897
+I, [2015-04-16T08:42:05.303404 #2708]  INFO -- default-centos-5: [91mImporting GPG key 0xE8562897 "CentOS-5 Key (CentOS 5 Official Signing Key) <centos-5-key@centos.org>" from /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+I, [2015-04-16T08:42:05.402992 #2708]  INFO -- default-centos-5: Running rpm_check_debug
+I, [2015-04-16T08:42:05.467802 #2708]  INFO -- default-centos-5: Running Transaction Test
+I, [2015-04-16T08:42:05.653939 #2708]  INFO -- default-centos-5: Finished Transaction Test
+I, [2015-04-16T08:42:05.654979 #2708]  INFO -- default-centos-5: Transaction Test Succeeded
+I, [2015-04-16T08:42:05.761232 #2708]  INFO -- default-centos-5: Running Transaction
+I, [2015-04-16T08:42:06.329692 #2708]  INFO -- default-centos-5:   Installing     : glibc                                                   1/27 
+I, [2015-04-16T08:42:06.414983 #2708]  INFO -- default-centos-5:   Updating       : openssl                                                 2/27 
+I, [2015-04-16T08:42:06.507501 #2708]  INFO -- default-centos-5:   Installing     : libsepol                                                3/27 
+I, [2015-04-16T08:42:06.564320 #2708]  INFO -- default-centos-5:   Installing     : libselinux                                              4/27 
+I, [2015-04-16T08:42:06.617832 #2708]  INFO -- default-centos-5:   Installing     : zlib                                                    5/27 
+I, [2015-04-16T08:42:06.666549 #2708]  INFO -- default-centos-5:   Installing     : libselinux-python                                       6/27 
+I, [2015-04-16T08:42:06.715736 #2708]  INFO -- default-centos-5:   Installing     : libsemanage                                             7/27 
+I, [2015-04-16T08:42:06.773499 #2708]  INFO -- default-centos-5:   Installing     : tcp_wrappers                                            8/27 
+I, [2015-04-16T08:42:06.855014 #2708]  INFO -- default-centos-5:   Installing     : audit-libs-python                                       9/27 
+I, [2015-04-16T08:42:06.945097 #2708]  INFO -- default-centos-5:   Installing     : policycoreutils                                        10/27 
+I, [2015-04-16T08:42:07.059170 #2708]  INFO -- default-centos-5:   Installing     : libidn                                                 11/27 
+I, [2015-04-16T08:42:07.108219 #2708]  INFO -- default-centos-5:   Installing     : device-mapper                                          12/27 
+I, [2015-04-16T08:42:07.171686 #2708]  INFO -- default-centos-5:   Installing     : e2fsprogs-libs                                         13/27 
+I, [2015-04-16T08:42:07.226566 #2708]  INFO -- default-centos-5:   Installing     : libidn                                                 14/27 
+I, [2015-04-16T08:42:07.283189 #2708]  INFO -- default-centos-5:   Installing     : keyutils-libs                                          15/27 
+I, [2015-04-16T08:42:07.358268 #2708]  INFO -- default-centos-5:   Installing     : curl                                                   16/27 
+I, [2015-04-16T08:42:07.422426 #2708]  INFO -- default-centos-5:   Installing     : sudo                                                   17/27 
+I, [2015-04-16T08:42:07.513430 #2708]  INFO -- default-centos-5:   Installing     : which                                                  18/27 
+I, [2015-04-16T08:42:07.694206 #2708]  INFO -- default-centos-5:   Installing     : krb5-libs                                              19/27 
+I, [2015-04-16T08:42:07.763951 #2708]  INFO -- default-centos-5:   Installing     : openssl                                                20/27 
+I, [2015-04-16T08:42:07.818550 #2708]  INFO -- default-centos-5:   Installing     : curl                                                   21/27 
+I, [2015-04-16T08:42:07.863930 #2708]  INFO -- default-centos-5:   Installing     : fipscheck-lib                                          22/27 
+I, [2015-04-16T08:42:07.962383 #2708]  INFO -- default-centos-5:   Installing     : openssh                                                23/27 
+I, [2015-04-16T08:42:08.028373 #2708]  INFO -- default-centos-5:   Installing     : openssh-server                                         24/27 
+I, [2015-04-16T08:42:08.070268 #2708]  INFO -- default-centos-5:   Installing     : openssh-clients                                        25/27 
+I, [2015-04-16T08:42:08.110133 #2708]  INFO -- default-centos-5:   Installing     : fipscheck                                              26/27 
+I, [2015-04-16T08:42:08.174821 #2708]  INFO -- default-centos-5:   Cleanup        : openssl                                                27/27 
+I, [2015-04-16T08:42:08.175042 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:42:08.175091 #2708]  INFO -- default-centos-5: Installed:
+I, [2015-04-16T08:42:08.175229 #2708]  INFO -- default-centos-5:   curl.i386 0:7.15.5-17.el5_9             curl.x86_64 0:7.15.5-17.el5_9         
+I, [2015-04-16T08:42:08.175329 #2708]  INFO -- default-centos-5:   openssh-clients.x86_64 0:4.3p2-82.el5   openssh-server.x86_64 0:4.3p2-82.el5  
+I, [2015-04-16T08:42:08.175718 #2708]  INFO -- default-centos-5:   sudo.x86_64 0:1.7.2p1-29.el5_10         which.x86_64 0:2.16-7                 
+I, [2015-04-16T08:42:08.175818 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:42:08.176070 #2708]  INFO -- default-centos-5: Dependency Installed:
+I, [2015-04-16T08:42:08.176127 #2708]  INFO -- default-centos-5:   audit-libs-python.x86_64 0:1.8-2.el5                                          
+I, [2015-04-16T08:42:08.176728 #2708]  INFO -- default-centos-5:   device-mapper.i386 0:1.02.67-2.el5_11.1                                       
+I, [2015-04-16T08:42:08.176856 #2708]  INFO -- default-centos-5:   e2fsprogs-libs.i386 0:1.39-37.el5                                             
+I, [2015-04-16T08:42:08.177117 #2708]  INFO -- default-centos-5:   fipscheck.x86_64 0:1.2.0-1.el5                                                
+I, [2015-04-16T08:42:08.177368 #2708]  INFO -- default-centos-5:   fipscheck-lib.x86_64 0:1.2.0-1.el5                                            
+I, [2015-04-16T08:42:08.177630 #2708]  INFO -- default-centos-5:   glibc.i686 0:2.5-123.el5_11.1                                                 
+I, [2015-04-16T08:42:08.177877 #2708]  INFO -- default-centos-5:   keyutils-libs.i386 0:1.2-1.el5                                                
+I, [2015-04-16T08:42:08.178127 #2708]  INFO -- default-centos-5:   krb5-libs.i386 0:1.6.1-80.el5_11                                              
+I, [2015-04-16T08:42:08.178379 #2708]  INFO -- default-centos-5:   libidn.i386 0:0.6.5-1.1                                                       
+I, [2015-04-16T08:42:08.178636 #2708]  INFO -- default-centos-5:   libidn.x86_64 0:0.6.5-1.1                                                     
+I, [2015-04-16T08:42:08.178900 #2708]  INFO -- default-centos-5:   libselinux.i386 0:1.33.4-5.7.el5.centos                                       
+I, [2015-04-16T08:42:08.179154 #2708]  INFO -- default-centos-5:   libselinux-python.x86_64 0:1.33.4-5.7.el5.centos                              
+I, [2015-04-16T08:42:08.179244 #2708]  INFO -- default-centos-5:   libsemanage.x86_64 0:1.9.1-4.4.el5                                            
+I, [2015-04-16T08:42:08.179341 #2708]  INFO -- default-centos-5:   libsepol.i386 0:1.15.2-3.el5                                                  
+I, [2015-04-16T08:42:08.179426 #2708]  INFO -- default-centos-5:   openssh.x86_64 0:4.3p2-82.el5                                                 
+I, [2015-04-16T08:42:08.179510 #2708]  INFO -- default-centos-5:   openssl.i686 0:0.9.8e-33.el5_11                                               
+I, [2015-04-16T08:42:08.179594 #2708]  INFO -- default-centos-5:   policycoreutils.x86_64 0:1.33.12-14.13.el5                                    
+I, [2015-04-16T08:42:08.179680 #2708]  INFO -- default-centos-5:   tcp_wrappers.x86_64 0:7.6-40.7.el5                                            
+I, [2015-04-16T08:42:08.179764 #2708]  INFO -- default-centos-5:   zlib.i386 0:1.2.3-7.el5                                                       
+I, [2015-04-16T08:42:08.180004 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:42:08.180092 #2708]  INFO -- default-centos-5: Dependency Updated:
+I, [2015-04-16T08:42:08.180176 #2708]  INFO -- default-centos-5:   openssl.x86_64 0:0.9.8e-33.el5_11                                             
+I, [2015-04-16T08:42:08.180717 #2708]  INFO -- default-centos-5: 
+I, [2015-04-16T08:42:08.181073 #2708]  INFO -- default-centos-5: Complete!
+I, [2015-04-16T08:42:14.192775 #2708]  INFO -- default-centos-5:  ---> 1cf4ffc0c9e3
+I, [2015-04-16T08:42:15.034949 #2708]  INFO -- default-centos-5: Removing intermediate container 96a04fc14ab5
+I, [2015-04-16T08:42:15.035016 #2708]  INFO -- default-centos-5: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-04-16T08:42:15.120486 #2708]  INFO -- default-centos-5:  ---> Running in f337dc969c3d
+I, [2015-04-16T08:42:15.508944 #2708]  INFO -- default-centos-5: Generating public/private rsa key pair.
+I, [2015-04-16T08:42:15.509031 #2708]  INFO -- default-centos-5: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+I, [2015-04-16T08:42:15.509208 #2708]  INFO -- default-centos-5: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+I, [2015-04-16T08:42:15.509261 #2708]  INFO -- default-centos-5: The key fingerprint is:
+I, [2015-04-16T08:42:15.509852 #2708]  INFO -- default-centos-5: b2:42:be:56:9a:f9:2a:52:60:ee:e5:94:74:4c:3c:8e root@16eae8c16d23
+I, [2015-04-16T08:42:19.281917 #2708]  INFO -- default-centos-5:  ---> bb7b8b7204d0
+I, [2015-04-16T08:42:20.150301 #2708]  INFO -- default-centos-5: Removing intermediate container f337dc969c3d
+I, [2015-04-16T08:42:20.150400 #2708]  INFO -- default-centos-5: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2015-04-16T08:42:20.231400 #2708]  INFO -- default-centos-5:  ---> Running in 987dd9f2fc0a
+I, [2015-04-16T08:42:20.554085 #2708]  INFO -- default-centos-5: Generating public/private dsa key pair.
+I, [2015-04-16T08:42:20.554134 #2708]  INFO -- default-centos-5: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+I, [2015-04-16T08:42:20.554294 #2708]  INFO -- default-centos-5: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+I, [2015-04-16T08:42:20.554398 #2708]  INFO -- default-centos-5: The key fingerprint is:
+I, [2015-04-16T08:42:20.556415 #2708]  INFO -- default-centos-5: 21:50:54:a1:86:89:5f:61:4b:43:21:cb:00:d6:36:a9 root@16eae8c16d23
+I, [2015-04-16T08:42:24.841455 #2708]  INFO -- default-centos-5:  ---> 1951924982cf
+I, [2015-04-16T08:42:25.665023 #2708]  INFO -- default-centos-5: Removing intermediate container 987dd9f2fc0a
+I, [2015-04-16T08:42:25.666226 #2708]  INFO -- default-centos-5: Step 5 : RUN if ! getent passwd kitchen; then useradd -d /home/kitchen -m -s /bin/bash kitchen; fi
+I, [2015-04-16T08:42:25.743355 #2708]  INFO -- default-centos-5:  ---> Running in 441b6e4e646c
+I, [2015-04-16T08:42:29.678410 #2708]  INFO -- default-centos-5:  ---> e7ad6a297b16
+I, [2015-04-16T08:42:30.553656 #2708]  INFO -- default-centos-5: Removing intermediate container 441b6e4e646c
+I, [2015-04-16T08:42:30.553709 #2708]  INFO -- default-centos-5: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2015-04-16T08:42:30.630450 #2708]  INFO -- default-centos-5:  ---> Running in c3f5e719a88f
+I, [2015-04-16T08:42:34.465644 #2708]  INFO -- default-centos-5:  ---> 15e5eacb05ad
+I, [2015-04-16T08:42:35.292514 #2708]  INFO -- default-centos-5: Removing intermediate container c3f5e719a88f
+I, [2015-04-16T08:42:35.292755 #2708]  INFO -- default-centos-5: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2015-04-16T08:42:35.368806 #2708]  INFO -- default-centos-5:  ---> Running in bfe3b4ee812b
+I, [2015-04-16T08:42:39.227201 #2708]  INFO -- default-centos-5:  ---> 99c28f410bda
+I, [2015-04-16T08:42:40.107443 #2708]  INFO -- default-centos-5: Removing intermediate container bfe3b4ee812b
+I, [2015-04-16T08:42:40.107526 #2708]  INFO -- default-centos-5: Step 8 : RUN mkdir -p /etc/sudoers.d
+I, [2015-04-16T08:42:40.185587 #2708]  INFO -- default-centos-5:  ---> Running in 2fb861f42f96
+I, [2015-04-16T08:42:43.985636 #2708]  INFO -- default-centos-5:  ---> 37ffb53bd4a6
+I, [2015-04-16T08:42:44.866338 #2708]  INFO -- default-centos-5: Removing intermediate container 2fb861f42f96
+I, [2015-04-16T08:42:44.866594 #2708]  INFO -- default-centos-5: Step 9 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2015-04-16T08:42:44.947172 #2708]  INFO -- default-centos-5:  ---> Running in d783071a9075
+I, [2015-04-16T08:42:48.713024 #2708]  INFO -- default-centos-5:  ---> 90d703b75fd7
+I, [2015-04-16T08:42:49.545065 #2708]  INFO -- default-centos-5: Removing intermediate container d783071a9075
+I, [2015-04-16T08:42:49.546233 #2708]  INFO -- default-centos-5: Step 10 : RUN chmod 0440 /etc/sudoers.d/kitchen
+I, [2015-04-16T08:42:49.624778 #2708]  INFO -- default-centos-5:  ---> Running in 60748cd769df
+I, [2015-04-16T09:38:56.725031 #2709]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T09:38:56.759391 #2709]  INFO -- default-centos-5: Sending build context to Docker daemon  2.56 kB
+I, [2015-04-16T09:38:56.759683 #2709]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T09:38:56.828716 #2709]  INFO -- default-centos-5: Step 0 : FROM centos:centos5
+I, [2015-04-16T09:38:56.831109 #2709]  INFO -- default-centos-5:  ---> 861c710fef70
+I, [2015-04-16T09:38:56.832616 #2709]  INFO -- default-centos-5: Step 1 : RUN yum clean all
+I, [2015-04-16T09:38:56.843105 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.843349 #2709]  INFO -- default-centos-5:  ---> 7168368bd282
+I, [2015-04-16T09:38:56.844499 #2709]  INFO -- default-centos-5: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-04-16T09:38:56.846370 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.847566 #2709]  INFO -- default-centos-5:  ---> 1cf4ffc0c9e3
+I, [2015-04-16T09:38:56.847796 #2709]  INFO -- default-centos-5: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-04-16T09:38:56.850283 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.850358 #2709]  INFO -- default-centos-5:  ---> bb7b8b7204d0
+I, [2015-04-16T09:38:56.850630 #2709]  INFO -- default-centos-5: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2015-04-16T09:38:56.852963 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.853214 #2709]  INFO -- default-centos-5:  ---> 1951924982cf
+I, [2015-04-16T09:38:56.853617 #2709]  INFO -- default-centos-5: Step 5 : RUN if ! getent passwd kitchen; then useradd -d /home/kitchen -m -s /bin/bash kitchen; fi
+I, [2015-04-16T09:38:56.855386 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.855668 #2709]  INFO -- default-centos-5:  ---> e7ad6a297b16
+I, [2015-04-16T09:38:56.856539 #2709]  INFO -- default-centos-5: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2015-04-16T09:38:56.858779 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.859022 #2709]  INFO -- default-centos-5:  ---> 15e5eacb05ad
+I, [2015-04-16T09:38:56.859221 #2709]  INFO -- default-centos-5: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2015-04-16T09:38:56.861319 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.861415 #2709]  INFO -- default-centos-5:  ---> 99c28f410bda
+I, [2015-04-16T09:38:56.861643 #2709]  INFO -- default-centos-5: Step 8 : RUN mkdir -p /etc/sudoers.d
+I, [2015-04-16T09:38:56.863330 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.864214 #2709]  INFO -- default-centos-5:  ---> 37ffb53bd4a6
+I, [2015-04-16T09:38:56.864557 #2709]  INFO -- default-centos-5: Step 9 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2015-04-16T09:38:56.867111 #2709]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:38:56.867460 #2709]  INFO -- default-centos-5:  ---> 90d703b75fd7
+I, [2015-04-16T09:38:56.867864 #2709]  INFO -- default-centos-5: Step 10 : RUN chmod 0440 /etc/sudoers.d/kitchen
+I, [2015-04-16T09:38:57.185070 #2709]  INFO -- default-centos-5:  ---> Running in cf4771a63817
+I, [2015-04-16T09:50:16.443108 #2693]  INFO -- default-centos-5: -----> Destroying <default-centos-5>...
+I, [2015-04-16T09:50:16.450920 #2693]  INFO -- default-centos-5: Finished destroying <default-centos-5> (0m0.00s).
+I, [2015-04-16T09:50:26.479489 #2734]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T09:50:26.497019 #2734]  INFO -- default-centos-5: Sending build context to Docker daemon  2.56 kB
+I, [2015-04-16T09:50:26.501062 #2734]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T09:50:26.553958 #2734]  INFO -- default-centos-5: Step 0 : FROM centos:centos5
+I, [2015-04-16T09:50:26.564335 #2734]  INFO -- default-centos-5:  ---> 861c710fef70
+I, [2015-04-16T09:50:26.566077 #2734]  INFO -- default-centos-5: Step 1 : RUN yum clean all
+I, [2015-04-16T09:50:26.580413 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.580679 #2734]  INFO -- default-centos-5:  ---> 7168368bd282
+I, [2015-04-16T09:50:26.580903 #2734]  INFO -- default-centos-5: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-04-16T09:50:26.583551 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.583754 #2734]  INFO -- default-centos-5:  ---> 1cf4ffc0c9e3
+I, [2015-04-16T09:50:26.583959 #2734]  INFO -- default-centos-5: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-04-16T09:50:26.586933 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.587060 #2734]  INFO -- default-centos-5:  ---> bb7b8b7204d0
+I, [2015-04-16T09:50:26.588643 #2734]  INFO -- default-centos-5: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2015-04-16T09:50:26.591874 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.591993 #2734]  INFO -- default-centos-5:  ---> 1951924982cf
+I, [2015-04-16T09:50:26.592240 #2734]  INFO -- default-centos-5: Step 5 : RUN if ! getent passwd kitchen; then useradd -d /home/kitchen -m -s /bin/bash kitchen; fi
+I, [2015-04-16T09:50:26.595096 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.595600 #2734]  INFO -- default-centos-5:  ---> e7ad6a297b16
+I, [2015-04-16T09:50:26.595755 #2734]  INFO -- default-centos-5: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2015-04-16T09:50:26.597681 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.599054 #2734]  INFO -- default-centos-5:  ---> 15e5eacb05ad
+I, [2015-04-16T09:50:26.599179 #2734]  INFO -- default-centos-5: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2015-04-16T09:50:26.600848 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.600906 #2734]  INFO -- default-centos-5:  ---> 99c28f410bda
+I, [2015-04-16T09:50:26.601824 #2734]  INFO -- default-centos-5: Step 8 : RUN mkdir -p /etc/sudoers.d
+I, [2015-04-16T09:50:26.605521 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.606672 #2734]  INFO -- default-centos-5:  ---> 37ffb53bd4a6
+I, [2015-04-16T09:50:26.606740 #2734]  INFO -- default-centos-5: Step 9 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2015-04-16T09:50:26.609196 #2734]  INFO -- default-centos-5:  ---> Using cache
+I, [2015-04-16T09:50:26.609763 #2734]  INFO -- default-centos-5:  ---> 90d703b75fd7
+I, [2015-04-16T09:50:26.609947 #2734]  INFO -- default-centos-5: Step 10 : RUN chmod 0440 /etc/sudoers.d/kitchen
+I, [2015-04-16T09:50:26.929658 #2734]  INFO -- default-centos-5:  ---> Running in 68f6d7de57e0
+I, [2015-04-16T12:14:27.985105 #2844]  INFO -- default-centos-5: -----> Destroying <default-centos-5>...
+I, [2015-04-16T12:14:27.992612 #2844]  INFO -- default-centos-5: Finished destroying <default-centos-5> (0m0.00s).
+I, [2015-04-16T12:15:14.684526 #2974]  INFO -- default-centos-5: -----> Creating <default-centos-5>...
+I, [2015-04-16T12:15:14.699896 #2974]  INFO -- default-centos-5: Sending build context to Docker daemon  2.56 kB
+I, [2015-04-16T12:15:14.700739 #2974]  INFO -- default-centos-5: Sending build context to Docker daemon 
+I, [2015-04-16T12:15:14.756256 #2974]  INFO -- default-centos-5: Step 0 : FROM centos:centos5
+I, [2015-04-16T12:15:14.756328 #2974]  INFO -- default-centos-5:  ---> 861c710fef70
+I, [2015-04-16T12:15:14.756450 #2974]  INFO -- default-centos-5: Step 1 : RUN yum clean all
+I, [2015-04-16T12:15:14.898194 #2974]  INFO -- default-centos-5:  ---> Running in bd88014a4488
+I, [2015-04-16T12:15:15.687808 #2974]  INFO -- default-centos-5: Loaded plugins: fastestmirror
+I, [2015-04-16T12:15:15.781865 #2974]  INFO -- default-centos-5: Cleaning up Everything
+I, [2015-04-16T12:15:18.972205 #2974]  INFO -- default-centos-5:  ---> 91fa8fe7c4b9
+I, [2015-04-16T12:15:19.819048 #2974]  INFO -- default-centos-5: Removing intermediate container bd88014a4488
+I, [2015-04-16T12:15:19.820062 #2974]  INFO -- default-centos-5: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2015-04-16T12:15:19.911639 #2974]  INFO -- default-centos-5:  ---> Running in 5d3b4517ee38
+I, [2015-04-16T12:15:20.174324 #2974]  INFO -- default-centos-5: Loaded plugins: fastestmirror
+I, [2015-04-16T12:15:20.232838 #2974]  INFO -- default-centos-5: Determining fastest mirrors
+I, [2015-04-16T12:15:22.200102 #2974]  INFO -- default-centos-5:  * base: centos.spd.co.il
+I, [2015-04-16T12:15:22.201695 #2974]  INFO -- default-centos-5:  * extras: mirrors.prometeus.net
+I, [2015-04-16T12:15:22.202806 #2974]  INFO -- default-centos-5:  * libselinux: mirrors.prometeus.net
+I, [2015-04-16T12:15:22.205126 #2974]  INFO -- default-centos-5:  * updates: mirrors.prometeus.net
+I, [2015-04-16T12:15:30.295402 #2974]  INFO -- default-centos-5: Reducing CentOS-5 - libselinux to included packages only
+I, [2015-04-16T12:15:30.295974 #2974]  INFO -- default-centos-5: Finished
+I, [2015-04-16T12:15:30.296820 #2974]  INFO -- default-centos-5: Setting up Install Process
+I, [2015-04-16T12:15:30.893402 #2974]  INFO -- default-centos-5: Resolving Dependencies
+I, [2015-04-16T12:15:30.893831 #2974]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T12:15:30.894674 #2974]  INFO -- default-centos-5: ---> Package curl.i386 0:7.15.5-17.el5_9 set to be updated
+I, [2015-04-16T12:15:30.929246 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.4) for package: curl
+I, [2015-04-16T12:15:30.943414 #2974]  INFO -- default-centos-5: --> Processing Dependency: libgssapi_krb5.so.2 for package: curl
+I, [2015-04-16T12:15:30.950324 #2974]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2(GLIBC_2.1) for package: curl
+I, [2015-04-16T12:15:30.954443 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.1.3) for package: curl
+I, [2015-04-16T12:15:30.955799 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.2) for package: curl
+I, [2015-04-16T12:15:30.956007 #2974]  INFO -- default-centos-5: --> Processing Dependency: libidn.so.11 for package: curl
+I, [2015-04-16T12:15:30.960592 #2974]  INFO -- default-centos-5: --> Processing Dependency: libz.so.1 for package: curl
+I, [2015-04-16T12:15:30.964032 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6 for package: curl
+I, [2015-04-16T12:15:30.967575 #2974]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2 for package: curl
+I, [2015-04-16T12:15:30.968480 #2974]  INFO -- default-centos-5: --> Processing Dependency: libgssapi_krb5.so.2(gssapi_krb5_2_MIT) for package: curl
+I, [2015-04-16T12:15:30.972351 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.3) for package: curl
+I, [2015-04-16T12:15:30.977293 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.3.4) for package: curl
+I, [2015-04-16T12:15:30.979681 #2974]  INFO -- default-centos-5: --> Processing Dependency: libk5crypto.so.3 for package: curl
+I, [2015-04-16T12:15:30.983219 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.1) for package: curl
+I, [2015-04-16T12:15:30.988011 #2974]  INFO -- default-centos-5: --> Processing Dependency: libssl.so.6 for package: curl
+I, [2015-04-16T12:15:30.995857 #2974]  INFO -- default-centos-5: --> Processing Dependency: libcom_err.so.2 for package: curl
+I, [2015-04-16T12:15:30.998881 #2974]  INFO -- default-centos-5: --> Processing Dependency: libcrypto.so.6 for package: curl
+I, [2015-04-16T12:15:31.002298 #2974]  INFO -- default-centos-5: --> Processing Dependency: libc.so.6(GLIBC_2.0) for package: curl
+I, [2015-04-16T12:15:31.006009 #2974]  INFO -- default-centos-5: --> Processing Dependency: libdl.so.2(GLIBC_2.0) for package: curl
+I, [2015-04-16T12:15:31.007592 #2974]  INFO -- default-centos-5: --> Processing Dependency: libkrb5.so.3 for package: curl
+I, [2015-04-16T12:15:31.010248 #2974]  INFO -- default-centos-5: ---> Package curl.x86_64 0:7.15.5-17.el5_9 set to be updated
+I, [2015-04-16T12:15:31.029491 #2974]  INFO -- default-centos-5: --> Processing Dependency: libidn.so.11()(64bit) for package: curl
+I, [2015-04-16T12:15:31.035083 #2974]  INFO -- default-centos-5: ---> Package openssh-clients.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T12:15:31.054194 #2974]  INFO -- default-centos-5: --> Processing Dependency: openssh = 4.3p2-82.el5 for package: openssh-clients
+I, [2015-04-16T12:15:31.057108 #2974]  INFO -- default-centos-5: --> Processing Dependency: libfipscheck.so.1()(64bit) for package: openssh-clients
+I, [2015-04-16T12:15:31.062107 #2974]  INFO -- default-centos-5: ---> Package openssh-server.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T12:15:49.322075 #2974]  INFO -- default-centos-5: --> Processing Dependency: libwrap.so.0()(64bit) for package: openssh-server
+I, [2015-04-16T12:15:49.327155 #2974]  INFO -- default-centos-5: ---> Package sudo.x86_64 0:1.7.2p1-29.el5_10 set to be updated
+I, [2015-04-16T12:15:49.334446 #2974]  INFO -- default-centos-5: --> Processing Dependency: policycoreutils for package: sudo
+I, [2015-04-16T12:15:49.337310 #2974]  INFO -- default-centos-5: ---> Package which.x86_64 0:2.16-7 set to be updated
+I, [2015-04-16T12:15:49.342329 #2974]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T12:15:49.343216 #2974]  INFO -- default-centos-5: ---> Package e2fsprogs-libs.i386 0:1.39-37.el5 set to be updated
+I, [2015-04-16T12:15:49.350305 #2974]  INFO -- default-centos-5: --> Processing Dependency: libdevmapper.so.1.02 for package: e2fsprogs-libs
+I, [2015-04-16T12:15:49.353186 #2974]  INFO -- default-centos-5: ---> Package fipscheck-lib.x86_64 0:1.2.0-1.el5 set to be updated
+I, [2015-04-16T12:15:49.358724 #2974]  INFO -- default-centos-5: --> Processing Dependency: /usr/bin/fipscheck for package: fipscheck-lib
+I, [2015-04-16T12:15:49.365834 #2974]  INFO -- default-centos-5: ---> Package glibc.i686 0:2.5-123.el5_11.1 set to be updated
+I, [2015-04-16T12:15:49.376542 #2974]  INFO -- default-centos-5: ---> Package krb5-libs.i386 0:1.6.1-80.el5_11 set to be updated
+I, [2015-04-16T12:15:49.391546 #2974]  INFO -- default-centos-5: --> Processing Dependency: libkeyutils.so.1 for package: krb5-libs
+I, [2015-04-16T12:15:49.394112 #2974]  INFO -- default-centos-5: --> Processing Dependency: libselinux.so.1 for package: krb5-libs
+I, [2015-04-16T12:15:49.397035 #2974]  INFO -- default-centos-5: --> Processing Dependency: libkeyutils.so.1(KEYUTILS_0.3) for package: krb5-libs
+I, [2015-04-16T12:15:49.399534 #2974]  INFO -- default-centos-5: ---> Package libidn.i386 0:0.6.5-1.1 set to be updated
+I, [2015-04-16T12:15:49.403400 #2974]  INFO -- default-centos-5: ---> Package libidn.x86_64 0:0.6.5-1.1 set to be updated
+I, [2015-04-16T12:15:49.406408 #2974]  INFO -- default-centos-5: ---> Package openssh.x86_64 0:4.3p2-82.el5 set to be updated
+I, [2015-04-16T12:15:49.438915 #2974]  INFO -- default-centos-5: ---> Package openssl.i686 0:0.9.8e-33.el5_11 set to be updated
+I, [2015-04-16T12:15:49.448351 #2974]  INFO -- default-centos-5: ---> Package openssl.x86_64 0:0.9.8e-33.el5_11 set to be updated
+I, [2015-04-16T12:15:49.451165 #2974]  INFO -- default-centos-5: ---> Package policycoreutils.x86_64 0:1.33.12-14.13.el5 set to be updated
+I, [2015-04-16T12:15:49.507362 #2974]  INFO -- default-centos-5: --> Processing Dependency: libsemanage >= 1.9.1-4.2 for package: policycoreutils
+I, [2015-04-16T12:15:49.510879 #2974]  INFO -- default-centos-5: --> Processing Dependency: audit-libs-python >= 1.1.4-3 for package: policycoreutils
+I, [2015-04-16T12:15:49.514034 #2974]  INFO -- default-centos-5: --> Processing Dependency: libselinux-python for package: policycoreutils
+I, [2015-04-16T12:15:49.517519 #2974]  INFO -- default-centos-5: --> Processing Dependency: libsemanage.so.1(LIBSEMANAGE_1.0)(64bit) for package: policycoreutils
+I, [2015-04-16T12:15:49.518888 #2974]  INFO -- default-centos-5: --> Processing Dependency: libsemanage.so.1()(64bit) for package: policycoreutils
+I, [2015-04-16T12:15:49.520176 #2974]  INFO -- default-centos-5: ---> Package tcp_wrappers.x86_64 0:7.6-40.7.el5 set to be updated
+I, [2015-04-16T12:15:49.523887 #2974]  INFO -- default-centos-5: ---> Package zlib.i386 0:1.2.3-7.el5 set to be updated
+I, [2015-04-16T12:15:49.525186 #2974]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T12:15:49.526622 #2974]  INFO -- default-centos-5: ---> Package audit-libs-python.x86_64 0:1.8-2.el5 set to be updated
+I, [2015-04-16T12:15:49.530171 #2974]  INFO -- default-centos-5: ---> Package device-mapper.i386 0:1.02.67-2.el5_11.1 set to be updated
+I, [2015-04-16T12:15:49.532901 #2974]  INFO -- default-centos-5: --> Processing Dependency: libsepol.so.1 for package: device-mapper
+I, [2015-04-16T12:15:49.535477 #2974]  INFO -- default-centos-5: ---> Package fipscheck.x86_64 0:1.2.0-1.el5 set to be updated
+I, [2015-04-16T12:15:49.539008 #2974]  INFO -- default-centos-5: ---> Package keyutils-libs.i386 0:1.2-1.el5 set to be updated
+I, [2015-04-16T12:15:49.540965 #2974]  INFO -- default-centos-5: ---> Package libselinux.i386 0:1.33.4-5.7.el5.centos set to be updated
+I, [2015-04-16T12:15:49.546895 #2974]  INFO -- default-centos-5: ---> Package libselinux-python.x86_64 0:1.33.4-5.7.el5.centos set to be updated
+I, [2015-04-16T12:15:49.550829 #2974]  INFO -- default-centos-5: ---> Package libsemanage.x86_64 0:1.9.1-4.4.el5 set to be updated
+I, [2015-04-16T12:15:49.556791 #2974]  INFO -- default-centos-5: --> Running transaction check
+I, [2015-04-16T12:15:49.558466 #2974]  INFO -- default-centos-5: ---> Package libsepol.i386 0:1.15.2-3.el5 set to be updated
+I, [2015-04-16T12:15:49.661055 #2974]  INFO -- default-centos-5: --> Finished Dependency Resolution
+I, [2015-04-16T12:15:49.667159 #2974]  INFO -- default-centos-5: Dependencies Resolved
+I, [2015-04-16T12:15:49.695129 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:15:49.695183 #2974]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T12:15:49.695262 #2974]  INFO -- default-centos-5:  Package              Arch      Version                     Repository     Size
+I, [2015-04-16T12:15:49.695312 #2974]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T12:15:49.695450 #2974]  INFO -- default-centos-5: Installing:
+I, [2015-04-16T12:15:49.695561 #2974]  INFO -- default-centos-5:  curl                 i386      7.15.5-17.el5_9             base          235 k
+I, [2015-04-16T12:15:49.695646 #2974]  INFO -- default-centos-5:  curl                 x86_64    7.15.5-17.el5_9             base          232 k
+I, [2015-04-16T12:15:49.695728 #2974]  INFO -- default-centos-5:  openssh-clients      x86_64    4.3p2-82.el5                base          456 k
+I, [2015-04-16T12:15:49.696326 #2974]  INFO -- default-centos-5:  openssh-server       x86_64    4.3p2-82.el5                base          280 k
+I, [2015-04-16T12:15:49.696596 #2974]  INFO -- default-centos-5:  sudo                 x86_64    1.7.2p1-29.el5_10           base          364 k
+I, [2015-04-16T12:15:49.697147 #2974]  INFO -- default-centos-5:  which                x86_64    2.16-7                      base           24 k
+I, [2015-04-16T12:15:49.697433 #2974]  INFO -- default-centos-5: Installing for dependencies:
+I, [2015-04-16T12:15:49.697458 #2974]  INFO -- default-centos-5:  audit-libs-python    x86_64    1.8-2.el5                   base           82 k
+I, [2015-04-16T12:15:49.697720 #2974]  INFO -- default-centos-5:  device-mapper        i386      1.02.67-2.el5_11.1          updates       804 k
+I, [2015-04-16T12:15:49.697794 #2974]  INFO -- default-centos-5:  e2fsprogs-libs       i386      1.39-37.el5                 base          120 k
+I, [2015-04-16T12:15:49.697952 #2974]  INFO -- default-centos-5:  fipscheck            x86_64    1.2.0-1.el5                 base           13 k
+I, [2015-04-16T12:15:49.697982 #2974]  INFO -- default-centos-5:  fipscheck-lib        x86_64    1.2.0-1.el5                 base          6.7 k
+I, [2015-04-16T12:15:49.698418 #2974]  INFO -- default-centos-5:  glibc                i686      2.5-123.el5_11.1            updates       5.4 M
+I, [2015-04-16T12:15:49.698418 #2974]  INFO -- default-centos-5:  keyutils-libs        i386      1.2-1.el5                   base           18 k
+I, [2015-04-16T12:15:49.699882 #2974]  INFO -- default-centos-5:  krb5-libs            i386      1.6.1-80.el5_11             updates       670 k
+I, [2015-04-16T12:15:49.700087 #2974]  INFO -- default-centos-5:  libidn               i386      0.6.5-1.1                   base          194 k
+I, [2015-04-16T12:15:49.700242 #2974]  INFO -- default-centos-5:  libidn               x86_64    0.6.5-1.1                   base          195 k
+I, [2015-04-16T12:15:49.700336 #2974]  INFO -- default-centos-5:  libselinux           i386      1.33.4-5.7.el5.centos       libselinux     77 k
+I, [2015-04-16T12:15:49.700947 #2974]  INFO -- default-centos-5:  libselinux-python    x86_64    1.33.4-5.7.el5.centos       libselinux     74 k
+I, [2015-04-16T12:15:49.701497 #2974]  INFO -- default-centos-5:  libsemanage          x86_64    1.9.1-4.4.el5               base          141 k
+I, [2015-04-16T12:15:49.702078 #2974]  INFO -- default-centos-5:  libsepol             i386      1.15.2-3.el5                base          128 k
+I, [2015-04-16T12:15:49.702911 #2974]  INFO -- default-centos-5:  openssh              x86_64    4.3p2-82.el5                base          291 k
+I, [2015-04-16T12:15:49.703329 #2974]  INFO -- default-centos-5:  openssl              i686      0.9.8e-33.el5_11            updates       1.5 M
+I, [2015-04-16T12:15:49.704313 #2974]  INFO -- default-centos-5:  policycoreutils      x86_64    1.33.12-14.13.el5           base          630 k
+I, [2015-04-16T12:15:49.705299 #2974]  INFO -- default-centos-5:  tcp_wrappers         x86_64    7.6-40.7.el5                base          112 k
+I, [2015-04-16T12:15:49.706310 #2974]  INFO -- default-centos-5:  zlib                 i386      1.2.3-7.el5                 base           51 k
+I, [2015-04-16T12:15:49.707310 #2974]  INFO -- default-centos-5: Updating for dependencies:
+I, [2015-04-16T12:15:49.707862 #2974]  INFO -- default-centos-5:  openssl              x86_64    0.9.8e-33.el5_11            updates       1.5 M
+I, [2015-04-16T12:15:49.708295 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:15:49.708464 #2974]  INFO -- default-centos-5: Transaction Summary
+I, [2015-04-16T12:15:49.708658 #2974]  INFO -- default-centos-5: ================================================================================
+I, [2015-04-16T12:15:49.708848 #2974]  INFO -- default-centos-5: Install      25 Package(s)
+I, [2015-04-16T12:15:49.708965 #2974]  INFO -- default-centos-5: Upgrade       1 Package(s)
+I, [2015-04-16T12:15:49.710518 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:15:49.710652 #2974]  INFO -- default-centos-5: Total download size: 13 M
+I, [2015-04-16T12:15:49.710820 #2974]  INFO -- default-centos-5: Downloading Packages:
+I, [2015-04-16T12:16:46.491673 #2974]  INFO -- default-centos-5: --------------------------------------------------------------------------------
+I, [2015-04-16T12:16:46.500176 #2974]  INFO -- default-centos-5: Total                                           241 kB/s |  13 MB     00:56     
+I, [2015-04-16T12:16:46.500685 #2974]  INFO -- default-centos-5: [91mwarning: rpmts_HdrFromFdno: Header V3 DSA signature: NOKEY, key ID e8562897
+I, [2015-04-16T12:16:46.505119 #2974]  INFO -- default-centos-5: [91mImporting GPG key 0xE8562897 "CentOS-5 Key (CentOS 5 Official Signing Key) <centos-5-key@centos.org>" from /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+I, [2015-04-16T12:16:46.564544 #2974]  INFO -- default-centos-5: Running rpm_check_debug
+I, [2015-04-16T12:16:46.621767 #2974]  INFO -- default-centos-5: Running Transaction Test
+I, [2015-04-16T12:16:46.760650 #2974]  INFO -- default-centos-5: Finished Transaction Test
+I, [2015-04-16T12:16:46.761403 #2974]  INFO -- default-centos-5: Transaction Test Succeeded
+I, [2015-04-16T12:16:46.815083 #2974]  INFO -- default-centos-5: Running Transaction
+I, [2015-04-16T12:16:47.416337 #2974]  INFO -- default-centos-5:   Installing     : glibc                                                   1/27 
+I, [2015-04-16T12:16:47.548752 #2974]  INFO -- default-centos-5:   Updating       : openssl                                                 2/27 
+I, [2015-04-16T12:16:47.607255 #2974]  INFO -- default-centos-5:   Installing     : libsepol                                                3/27 
+I, [2015-04-16T12:16:47.661775 #2974]  INFO -- default-centos-5:   Installing     : libselinux                                              4/27 
+I, [2015-04-16T12:16:47.748354 #2974]  INFO -- default-centos-5:   Installing     : zlib                                                    5/27 
+I, [2015-04-16T12:16:47.787696 #2974]  INFO -- default-centos-5:   Installing     : libselinux-python                                       6/27 
+I, [2015-04-16T12:16:47.864854 #2974]  INFO -- default-centos-5:   Installing     : libsemanage                                             7/27 
+I, [2015-04-16T12:16:47.939034 #2974]  INFO -- default-centos-5:   Installing     : tcp_wrappers                                            8/27 
+I, [2015-04-16T12:16:48.007458 #2974]  INFO -- default-centos-5:   Installing     : audit-libs-python                                       9/27 
+I, [2015-04-16T12:16:48.141470 #2974]  INFO -- default-centos-5:   Installing     : policycoreutils                                        10/27 
+I, [2015-04-16T12:16:48.282298 #2974]  INFO -- default-centos-5:   Installing     : libidn                                                 11/27 
+I, [2015-04-16T12:16:48.328717 #2974]  INFO -- default-centos-5:   Installing     : device-mapper                                          12/27 
+I, [2015-04-16T12:16:48.428956 #2974]  INFO -- default-centos-5:   Installing     : e2fsprogs-libs                                         13/27 
+I, [2015-04-16T12:16:48.506660 #2974]  INFO -- default-centos-5:   Installing     : libidn                                                 14/27 
+I, [2015-04-16T12:16:48.592870 #2974]  INFO -- default-centos-5:   Installing     : keyutils-libs                                          15/27 
+I, [2015-04-16T12:16:48.717814 #2974]  INFO -- default-centos-5:   Installing     : curl                                                   16/27 
+I, [2015-04-16T12:16:48.791394 #2974]  INFO -- default-centos-5:   Installing     : sudo                                                   17/27 
+I, [2015-04-16T12:16:48.917507 #2974]  INFO -- default-centos-5:   Installing     : which                                                  18/27 
+I, [2015-04-16T12:16:49.081444 #2974]  INFO -- default-centos-5:   Installing     : krb5-libs                                              19/27 
+I, [2015-04-16T12:16:49.207685 #2974]  INFO -- default-centos-5:   Installing     : openssl                                                20/27 
+I, [2015-04-16T12:16:49.301915 #2974]  INFO -- default-centos-5:   Installing     : curl                                                   21/27 
+I, [2015-04-16T12:16:49.384340 #2974]  INFO -- default-centos-5:   Installing     : fipscheck-lib                                          22/27 
+I, [2015-04-16T12:16:49.480773 #2974]  INFO -- default-centos-5:   Installing     : openssh                                                23/27 
+I, [2015-04-16T12:16:49.541021 #2974]  INFO -- default-centos-5:   Installing     : openssh-server                                         24/27 
+I, [2015-04-16T12:16:49.622172 #2974]  INFO -- default-centos-5:   Installing     : openssh-clients                                        25/27 
+I, [2015-04-16T12:16:49.698874 #2974]  INFO -- default-centos-5:   Installing     : fipscheck                                              26/27 
+I, [2015-04-16T12:16:49.757657 #2974]  INFO -- default-centos-5:   Cleanup        : openssl                                                27/27 
+I, [2015-04-16T12:16:49.757902 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:16:49.758371 #2974]  INFO -- default-centos-5: Installed:
+I, [2015-04-16T12:16:49.759205 #2974]  INFO -- default-centos-5:   curl.i386 0:7.15.5-17.el5_9             curl.x86_64 0:7.15.5-17.el5_9         
+I, [2015-04-16T12:16:49.759286 #2974]  INFO -- default-centos-5:   openssh-clients.x86_64 0:4.3p2-82.el5   openssh-server.x86_64 0:4.3p2-82.el5  
+I, [2015-04-16T12:16:49.759440 #2974]  INFO -- default-centos-5:   sudo.x86_64 0:1.7.2p1-29.el5_10         which.x86_64 0:2.16-7                 
+I, [2015-04-16T12:16:49.759681 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:16:49.759936 #2974]  INFO -- default-centos-5: Dependency Installed:
+I, [2015-04-16T12:16:49.760191 #2974]  INFO -- default-centos-5:   audit-libs-python.x86_64 0:1.8-2.el5                                          
+I, [2015-04-16T12:16:49.760311 #2974]  INFO -- default-centos-5:   device-mapper.i386 0:1.02.67-2.el5_11.1                                       
+I, [2015-04-16T12:16:49.760564 #2974]  INFO -- default-centos-5:   e2fsprogs-libs.i386 0:1.39-37.el5                                             
+I, [2015-04-16T12:16:49.760828 #2974]  INFO -- default-centos-5:   fipscheck.x86_64 0:1.2.0-1.el5                                                
+I, [2015-04-16T12:16:49.761094 #2974]  INFO -- default-centos-5:   fipscheck-lib.x86_64 0:1.2.0-1.el5                                            
+I, [2015-04-16T12:16:49.761359 #2974]  INFO -- default-centos-5:   glibc.i686 0:2.5-123.el5_11.1                                                 
+I, [2015-04-16T12:16:49.761626 #2974]  INFO -- default-centos-5:   keyutils-libs.i386 0:1.2-1.el5                                                
+I, [2015-04-16T12:16:49.761719 #2974]  INFO -- default-centos-5:   krb5-libs.i386 0:1.6.1-80.el5_11                                              
+I, [2015-04-16T12:16:49.761809 #2974]  INFO -- default-centos-5:   libidn.i386 0:0.6.5-1.1                                                       
+I, [2015-04-16T12:16:49.761897 #2974]  INFO -- default-centos-5:   libidn.x86_64 0:0.6.5-1.1                                                     
+I, [2015-04-16T12:16:49.762126 #2974]  INFO -- default-centos-5:   libselinux.i386 0:1.33.4-5.7.el5.centos                                       
+I, [2015-04-16T12:16:49.762218 #2974]  INFO -- default-centos-5:   libselinux-python.x86_64 0:1.33.4-5.7.el5.centos                              
+I, [2015-04-16T12:16:49.762300 #2974]  INFO -- default-centos-5:   libsemanage.x86_64 0:1.9.1-4.4.el5                                            
+I, [2015-04-16T12:16:49.762391 #2974]  INFO -- default-centos-5:   libsepol.i386 0:1.15.2-3.el5                                                  
+I, [2015-04-16T12:16:49.762479 #2974]  INFO -- default-centos-5:   openssh.x86_64 0:4.3p2-82.el5                                                 
+I, [2015-04-16T12:16:49.762578 #2974]  INFO -- default-centos-5:   openssl.i686 0:0.9.8e-33.el5_11                                               
+I, [2015-04-16T12:16:49.762671 #2974]  INFO -- default-centos-5:   policycoreutils.x86_64 0:1.33.12-14.13.el5                                    
+I, [2015-04-16T12:16:49.762899 #2974]  INFO -- default-centos-5:   tcp_wrappers.x86_64 0:7.6-40.7.el5                                            
+I, [2015-04-16T12:16:49.763228 #2974]  INFO -- default-centos-5:   zlib.i386 0:1.2.3-7.el5                                                       
+I, [2015-04-16T12:16:49.763374 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:16:49.763513 #2974]  INFO -- default-centos-5: Dependency Updated:
+I, [2015-04-16T12:16:49.763785 #2974]  INFO -- default-centos-5:   openssl.x86_64 0:0.9.8e-33.el5_11                                             
+I, [2015-04-16T12:16:49.764936 #2974]  INFO -- default-centos-5: 
+I, [2015-04-16T12:16:49.765507 #2974]  INFO -- default-centos-5: Complete!
+I, [2015-04-16T12:16:54.745791 #2974]  INFO -- default-centos-5:  ---> 701376a7951b
+I, [2015-04-16T12:16:55.536687 #2974]  INFO -- default-centos-5: Removing intermediate container 5d3b4517ee38
+I, [2015-04-16T12:16:55.536761 #2974]  INFO -- default-centos-5: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2015-04-16T12:16:55.609253 #2974]  INFO -- default-centos-5:  ---> Running in 6d1842537fe4
+I, [2015-04-16T12:16:55.862303 #2974]  INFO -- default-centos-5: Generating public/private rsa key pair.
+I, [2015-04-16T12:16:55.862354 #2974]  INFO -- default-centos-5: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+I, [2015-04-16T12:16:55.862515 #2974]  INFO -- default-centos-5: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+I, [2015-04-16T12:16:55.862569 #2974]  INFO -- default-centos-5: The key fingerprint is:
+I, [2015-04-16T12:16:55.863020 #2974]  INFO -- default-centos-5: 42:0a:93:e6:89:b6:ae:df:f9:57:2b:40:54:dd:c1:16 root@16eae8c16d23

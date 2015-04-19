@@ -1,0 +1,16 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-5
+  - name: centos-6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[myapp::default]
+    attributes:
